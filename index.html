@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .quiz {
+      background-color: rgb(245, 235, 204);
+      width: 500px;
+      min-height: 350px;
+      padding: 10px;
+      margin: 200px auto;
+    }
+
+    .option {
+      width: 90%;
+      background-color: rgb(252, 252, 252);
+      height: 40px;
+      padding: 15px;
+      margin-bottom: 5px;
+      
+    }
+
+    .option:hover {
+      cursor: pointer;
+      background-color: rgba(252, 252, 252, 0.459);
+
+    }
+
+    span {
+      background-color: brown;
+      padding: 10px;
+      color: white;
+      margin-right: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="quiz">
+    <h1>In web design,what does CSS stand for ?</h1>
+
+    <div onclick="check(this,'a')" class="option">
+      <p><span>A</span> Counter Strike Source</p>
+    </div>
+    <div onclick="check(this,'b')" class="option">
+      <p><span>B</span>Corrective Style Sheet</p>
+    </div>
+    <div onclick="check(this,'c')" class="option">
+      <p><span>C</span>Computer Style Sheet</p>
+    </div>
+    <div onclick="check(this,'d')" class="option">
+      <p><span>D</span>Cascading Style Sheet</p>
+    </div>
+
+  </div>
+
+
+
+
+  <script>
+
+    function check(e, val) {
+      if (val == 'd') {
+        e.style.backgroundColor = "rgb(99, 165, 0)";
+        e.style.color = "white";
+      } else {
+        e.style.backgroundColor = "red";
+        e.style.color = "white";
+
+
+      }
+    }
+  </script>
+</body>
+
+</html>
